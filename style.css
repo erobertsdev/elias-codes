@@ -134,9 +134,6 @@ i:hover {
 }
 
 @media all and (max-width: 1100px) {
-	/* div.column-nav {
-		margin: 20px auto;
-	} */
 	ul.nav {
 		margin: 20px auto;
 	}
