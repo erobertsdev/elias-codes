@@ -1,0 +1,22 @@
+{
+  "name": "elias-codes",
+  "version": "1.0.0",
+  "description": "Elias Codes Blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erobertsdev/elias-codes.git"
+  },
+  "author": "Elias Roberts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erobertsdev/elias-codes/issues"
+  },
+  "homepage": "https://github.com/erobertsdev/elias-codes#readme",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  }
+}
