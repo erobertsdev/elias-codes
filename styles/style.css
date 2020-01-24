@@ -1,11 +1,11 @@
-/*
-Dark gray: #2f2f2f
-Blue: #465c69
-Orange: #e27e5f
-Green: #8e9b90
-Light-Green: #92b4a7
-White: #e8f1f2
-*/
+:root {
+	--dark-gray: #2f2f2f;
+	--blue: #465c69;
+	--orange: #e27e5f;
+	--green: #8e9b90;
+	--light-green: #92b4a7;
+	--white: #e8f1f2;
+}
 
 * {
 	padding: 0;
@@ -15,27 +15,27 @@ White: #e8f1f2
 body {
 	font-family: 'Muli', 'Arial', sans-serif;
 	font-size: 62.5%;
-	background-color: #2f2f2f;
-	color: #e8f1f2;
+	background-color: var(--dark-gray);
+	color: var(--white);
 }
 
 a {
 	text-decoration: none;
-	color: #e8f1f2;
+	color: var(--white);
 }
 
 h1 {
 	margin-left: 40px;
-	color: #465c69;
-	text-shadow: .5px .5px 2px #465c69;
+	color: var(--blue);
+	text-shadow: .5px .5px 2px var(--blue);
 	font-size: 6rem;
 }
 
 h2 {
 	margin-left: 50px;
 	font-size: 2.5rem;
-	text-shadow: .5px .5px 1px #465c69;
-	color: #e8f1f2;
+	text-shadow: .5px .5px 1px var(--blue);
+	color: var(--white);
 }
 
 h3 {
@@ -56,30 +56,30 @@ li {
 }
 
 li:hover {
-	border: 1px solid #e8f1f2;
-	background-color: #92b4a7;
+	border: 1px solid var(--white);
+	background-color: var(--light-green);
 	transform: translateY(-3px);
-	color: #2f2f2f;
+	color: var(--dark-gray);
 }
 
 .nav {
 	padding: 20px;
-	border: 2px solid #465c69;
+	border: 2px solid var(--blue);
 	border-radius: 1.5rem;
 	font-size: 1.5rem;
 }
 
 .date {
-	color: #92b4a7;
+	color: var(--light-green);
 	font-size: 2rem;
 }
 
 .period {
-	color: #e8f1f2;
+	color: var(--white);
 }
 
 .codes {
-	color: #92b4a7;
+	color: var(--light-green);
 }
 
 .main {
@@ -91,7 +91,7 @@ li:hover {
 }
 
 .post {
-	border: 2px solid #465c69;
+	border: 2px solid var(--blue);
 	border-radius: 1.5rem;
 }
 
@@ -100,8 +100,8 @@ li:hover {
 }
 
 .post-title {
-	color: #e8f1f2b4;
-	text-shadow: .5px .5px 1px #465c69;
+	color: var(--white)b4;
+	text-shadow: .5px .5px 1px var(--blue);
 }
 
 .post-p {
@@ -109,7 +109,7 @@ li:hover {
 }
 
 .post-p::first-line {
-	color: #e8f1f2b4;
+	color: var(--white)b4;
 	font-weight: bolder;
 }
 
@@ -118,7 +118,7 @@ li:hover {
 }
 .post-hashtags {
 	margin: 20px;
-	color: #92b4a7;
+	color: var(--light-green);
 }
 
 footer {
@@ -131,7 +131,7 @@ i {
 }
 
 i:hover {
-	color: #e27e5f;
+	color: var(--orange);
 }
 
 @media all and (max-width: 1100px) {

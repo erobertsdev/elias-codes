@@ -1,0 +1,56 @@
+<head>
+    <link rel="icon" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Elias Roberts | Coding blog.">
+    <meta name="keywords" content="HTML,CSS,JavaScript,React,SQL,Python,Web,Development,Sass,PHP,Node,Photoshop,Blog">
+    <meta name="author" content="Elias Roberts">
+    <link href="https://fonts.googleapis.com/css?family=Muli:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <script src="https://kit.fontawesome.com/ea1a8cf193.js" crossorigin="anonymous"></script>
+    <title>Elias Roberts Development | Blog</title>
+</head>
+<body>
+
+<div class="title">
+    <h1>Elias<span class="period">.</span><span class="codes">codes</span></h1>
+    <h2 class="subtitle">and sometimes does other stuff...</h2>
+</div>
+
+<div class="main">
+    <div class="column-nav">
+        <ul class="nav">
+            <a href="#"><li>Coding</li></a>
+            <a href="#"><li>IT</li></a>
+            <a href="#"><li>Design</li></a>
+            <a href="#"><li>Other</li></a>
+        </ul>
+    </div>
+    <div class="column-post">
+        <div class="post">
+            <% posts.forEach((post) => {%>
+            <div class="date">
+                <h3><%=post.post_date%></h3>
+            </div>
+            <div class="post-container">
+                <h3 class="post-title"><%=post.title%></h3>
+                <p class="post-p">
+                    <%=post.body%>
+                </p>
+                <div class="hashtags">
+                    <p class="post-hashtags">
+                        <%=post.hashtags%>
+                    </p>
+                </div>
+            </div>
+        <% }); %>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p class="footer-soc"><a href="https://github.com/erobertsdev/elias-codes" target="_blank"><i class="fab fa-github-square ico"></i></a></p>
+</footer>
+
+</body>
