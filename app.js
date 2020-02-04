@@ -24,11 +24,44 @@ const getPosts = (query) => {
 };
 
 app.get('/', (req, res) => {
-	let query = 'SELECT * FROM posts ORDER BY id DESC';
+	let query = 'SELECT * FROM posts WHERE category = "coding" ORDER BY id DESC';
 	connection.query(query, (err, results) => {
 		if (err) throw err;
 		let posts = results;
 		res.render('index', {
+			posts: posts
+		});
+	});
+});
+
+app.get('/it', (req, res) => {
+	let query = 'SELECT * FROM posts WHERE category = "it" ORDER BY id DESC';
+	connection.query(query, (err, results) => {
+		if (err) throw err;
+		let posts = results;
+		res.render('it', {
+			posts: posts
+		});
+	});
+});
+
+app.get('/design', (req, res) => {
+	let query = 'SELECT * FROM posts WHERE category = "design" ORDER BY id DESC';
+	connection.query(query, (err, results) => {
+		if (err) throw err;
+		let posts = results;
+		res.render('design', {
+			posts: posts
+		});
+	});
+});
+
+app.get('/other', (req, res) => {
+	let query = 'SELECT * FROM posts WHERE category = "other" ORDER BY id DESC';
+	connection.query(query, (err, results) => {
+		if (err) throw err;
+		let posts = results;
+		res.render('other', {
 			posts: posts
 		});
 	});

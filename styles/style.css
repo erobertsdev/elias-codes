@@ -62,6 +62,17 @@ li:hover {
 	color: var(--dark-gray);
 }
 
+li.active {
+	border: 1px solid var(--white);
+	background-color: var(--light-green);
+	transform: translateY(-3px);
+	color: var(--dark-gray);
+}
+
+hr {
+	width: 60%;
+}
+
 .nav {
 	padding: 20px;
 	border: 2px solid var(--blue);
