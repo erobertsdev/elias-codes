@@ -64,13 +64,14 @@ li:hover {
 
 li.active {
 	border: 1px solid var(--white);
-	background-color: var(--light-green);
 	transform: translateY(-3px);
-	color: var(--dark-gray);
+	color: var(--white);
 }
 
 hr {
 	width: 60%;
+	margin: 0 auto;
+	margin-top: 10px;
 }
 
 .nav {
