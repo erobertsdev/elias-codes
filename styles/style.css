@@ -70,7 +70,6 @@ li {
 
 li:hover {
 	background-color: var(--dark-gray);
-	/* box-shadow: 2px 2px 3px var(--white); */
 	filter: brightness(110%);
 	transform: translateY(-5px);
 	color: var(--white);
@@ -102,7 +101,8 @@ hr {
 }
 
 .main {
-	background-color: var(--white);
+	font-family: 'Roboto Mono', monospace;
+	background-color: rgb(230, 230, 230);
 	margin: 30px auto;
 	width: 90vw;
 	display: grid;
@@ -111,18 +111,14 @@ hr {
 	grid-template-columns: 90vw;
 }
 
-.post {
-	border: 2px solid var(--blue);
-}
-
 .post-container {
 	font-size: 1.3rem;
 }
 
 .post-title {
+	letter-spacing: .5rem;
 	font-size: 2rem;
-	color: var(--white);
-	text-shadow: -1px -1px 0 var(--blue), 1px -1px 0 var(--blue), -1px 1px 0 var(--blue), 1px 1px 0 var(--blue);
+	color: var(--blue);
 }
 
 .post-p {
@@ -169,7 +165,6 @@ i:hover {
 	}
 	.nav {
 		font-size: 1rem;
-		font-weight: bold;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
@@ -184,7 +179,6 @@ i:hover {
 	}
 	.nav {
 		font-size: 1rem;
-		font-weight: bold;
 		padding: 15px;
 	}
 	.post-container {
