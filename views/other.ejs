@@ -1,5 +1,5 @@
 <head>
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="../favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,19 +14,17 @@
 <body>
 
 <div class="title">
-    <h1>Elias<span class="period">.</span><span class="codes">codes</span></h1>
-    <h2 class="subtitle">and sometimes does other stuff...</h2>
+    <h1>E<span class="period">.</span><span class="codes">C</span></h1>
+        <ul class="nav">
+            <a href="https://elias.codes/"><li>Coding</li></a>
+            <!-- <a href="https://elias.codes/it"><li>IT</li></a> -->
+            <a href="https://elias.codes/design"><li>Design</li></a>
+            <a href="https://elias.codes/other"><li class="active">Other</li></a>
+            <a href="https://elias.codes/login"><li><i class="far fa-user"></i></li></a>
+        </ul>
 </div>
 
 <div class="main">
-    <div class="column-nav">
-        <ul class="nav">
-            <a href="https://elias.codes/"><li>Coding</li></a>
-            <a href="https://elias.codes/it"><li>IT</li></a>
-            <a href="https://elias.codes/design"><li>Design</li></a>
-            <a href="https://elias.codes/other"><li class="active">Other</li></a>
-        </ul>
-    </div>
     <div class="column-post">
         <div class="post">
             <% posts.forEach((post) => {%>
@@ -40,6 +38,7 @@
                     <%=post.body%>
                 </p>
                 <div class="hashtags">
+                    <p class="likes"><i class="far fa-heart"></i></p>
                     <p class="post-hashtags">
                         <%=post.hashtags%>
                     </p>
