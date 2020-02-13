@@ -13,7 +13,7 @@
 }
 
 body {
-	font-family: 'Muli', 'Arial', sans-serif;
+	font-family: 'Roboto Mono', monospace;
 	font-size: 62.5%;
 	background-color: rgb(200, 200, 200);
 	color: var(--dark-gray);
@@ -101,7 +101,6 @@ hr {
 }
 
 .main {
-	font-family: 'Roboto Mono', monospace;
 	background-color: rgb(230, 230, 230);
 	margin: 30px auto;
 	width: 90vw;
