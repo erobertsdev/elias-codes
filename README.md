@@ -1,3 +1,1 @@
-# elias-codes
-
-A blog about computer things I learn.
+# This is for an old blog that's no longer in use.
